@@ -18,7 +18,7 @@ services:
     environment:
       - HUB_HOST=hub
   facebooklogin-module:
-    image: shubh4321/selenium-docker-sample
+    image: shubh4321/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -29,7 +29,7 @@ services:
     volumes:
       - ./facebook-result:/usr/share/samplefolder/test-output
   linkdinlogin-module:
-    image: shubh4321/selenium-docker-sample
+    image: shubh4321/selenium-docker
     depends_on:
       - chrome
       - firefox
